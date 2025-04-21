@@ -1,73 +1,86 @@
-# Welcome to your Lovable project
 
-## Project info
+# NextHero - React Application Starter
 
-**URL**: https://lovable.dev/projects/fbf4f9c9-df0c-4888-8dd9-2603811af163
+A modern React application starter inspired by Next.js, built with Vite, TypeScript, React Router, and Tailwind CSS.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- ⚡️ **Lightning Fast**: Built on Vite for incredibly fast development and optimized production builds
+- 🔒 **Type Safe**: Full TypeScript support for better developer experience
+- 📱 **Responsive**: Works perfectly on any device with a mobile-first approach
+- 🌓 **Dark Mode**: Built-in dark mode with automatic detection of system preferences
+- 🧩 **Component Library**: Pre-built UI components powered by shadcn-ui
+- 🎨 **Styling**: Tailwind CSS for utility-first styling
+- 📊 **Data Fetching**: Tanstack Query for efficient API handling
+- 🧭 **Routing**: React Router for handling navigation
+- 📁 **File Structure**: Organized file structure for better maintainability
 
-**Use Lovable**
+## Getting Started
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/fbf4f9c9-df0c-4888-8dd9-2603811af163) and start prompting.
+### Installation
 
-Changes made via Lovable will be committed automatically to this repo.
+```bash
+# Clone the repository (or create a new repository based on this template)
+git clone https://github.com/yourusername/nexthero.git
+cd nexthero
 
-**Use your preferred IDE**
+# Install dependencies
+npm install
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Development
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+The development server will start on http://localhost:8080. The application will automatically reload if you make changes to the code.
 
-**Use GitHub Codespaces**
+### Build
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+To build the application for production:
 
-## What technologies are used for this project?
+```bash
+npm run build
+```
 
-This project is built with:
+### Preview Production Build
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+To preview the production build locally:
 
-## How can I deploy this project?
+```bash
+npm run preview
+```
 
-Simply open [Lovable](https://lovable.dev/projects/fbf4f9c9-df0c-4888-8dd9-2603811af163) and click on Share -> Publish.
+## Project Structure
 
-## Can I connect a custom domain to my Lovable project?
+```
+nexthero/
+├── public/            # Static assets
+├── src/
+│   ├── components/    # Reusable UI components
+│   │   ├── layout/    # Layout components (Navbar, Footer, etc.)
+│   │   └── ui/        # UI components (Buttons, Cards, etc.)
+│   ├── hooks/         # Custom React hooks
+│   ├── lib/           # Utility functions and libraries
+│   ├── pages/         # Page components
+│   ├── App.tsx        # Main application component
+│   ├── main.tsx       # Application entry point
+│   └── index.css      # Global styles
+├── index.html         # HTML template
+└── ...                # Config files
+```
 
-Yes, you can!
+## Technologies
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Router](https://reactrouter.com/)
+- [Tanstack Query](https://tanstack.com/query)
+- [shadcn-ui](https://ui.shadcn.com/)
+- [Lucide React](https://lucide.dev/) (Icons)
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## License
+
+This project is licensed under the MIT License.
